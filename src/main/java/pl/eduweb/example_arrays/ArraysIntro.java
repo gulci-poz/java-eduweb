@@ -24,11 +24,31 @@ public class ArraysIntro {
         //    System.out.println(email);
         //}
 
-        for (int i = 0; i < emails.length; i++) {
+        // przejrzysta inkrementacja
+        int k = 10;
+        int j = k + 1;
+        System.out.println(k);
+        System.out.println(j);
+
+        //obieg nr 1: 0 < 3 true
+        //obieg nr 2: 1 < 3 true
+        //obieg nr 3: 2 < 3 true
+        //obieg nr 4: 3 < 3 false
+        for (int i = 0; i < emails.length; i = i + 1) {
+            System.out.println("index = " + i);
             System.out.println(emails[i]);
+            //System.out.println(emails[i].endsWith("@gmail.com"));
+            //System.out.println(emails[i].contains("@"));
         }
 
-        // metody dla obiektów klasy String: contains, endsWith
-        // length nie jest metodą, lecz polem (atrybutem), które przechowuje wielkość tablicy
+        System.out.println("==========");
+
+        int i = 0;
+        while (i < emails.length) {
+            System.out.println(emails[i]);
+            i = i + 1;
+        }
+
+        // do ... while
     }
 }
